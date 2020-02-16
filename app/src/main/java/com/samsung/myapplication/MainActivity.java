@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -30,54 +31,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public ArrayList<String> getData() {
-        ArrayList<String> data = new ArrayList<>();
+    public ArrayList<Cat> getData() {
+        ArrayList<Cat> data = new ArrayList<>();
 
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
-        data.add("Pushok");
-        data.add("Murzik");
-        data.add("Barsik");
+        data.add(new Cat("Murzik", Color.argb(255, 255, 255, 255), false));
+        data.add(new Cat("Barsik", Color.argb(255, 1, 2, 3), true));
+        data.add(new Cat("Pushok", Color.argb(255, 255, 255, 255), false));
+        data.add(new Cat("Murzik", Color.argb(255, 255, 255, 255), true));
 
         return data;
     }
